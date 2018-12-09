@@ -14,3 +14,13 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+
+double Calculator::Pow(double a, int power)
+{
+        while (--power)
+        {
+                a *= a;
+        }
+        return a;
+}
+
